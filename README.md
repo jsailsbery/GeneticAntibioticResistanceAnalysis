@@ -8,8 +8,8 @@ CLI - commands to run from the base directory of this repo
 docker build -t antibiotic_resistance_notebook Dockerfile
 
 ### RUN
-* please note that ports other than 8888 may be used
 docker run -p 8888:8888 -v $(PWD):/app antibiotic_resistance_notebook
+* please note that ports other than 8888 may be used
 
 ## Analysis Documentation
 All analysis notes, processes, procedures are documented in the following jupyter notebooks.
