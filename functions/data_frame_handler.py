@@ -73,7 +73,37 @@ class DataFrameHandler:
             print(f"ValueError: {str(ve)}")
             return []
 
-        except Exception as e:
-            print(f"An error occurred while selecting columns: {str(e)}")
-            return []
+    @staticmethod
+    def add_data_to_dataframe(df: pd.DataFrame, new_data: dict) -> pd.DataFrame:
+        """
+        Add new data to an existing DataFrame.
 
+        Parameters:
+            df (pd.DataFrame): The DataFrame to which new data should be added.
+            new_data (dict): A dictionary containing new data to be added, where keys are column names
+                             and values are lists of data to add.
+
+        Returns:
+            pd.DataFrame: The DataFrame with the new data added.
+        """
+        try:
+            if not isinstance(df, pd.DataFrame):
+                raise ValueError("The 'df' parameter must be a pandas DataFrame.")
+
+            if not isinstance(new_data, dict):
+                raise ValueError("The 'new_data' parameter must be a dictionary.")
+
+            for col_name, data in new_data.items():
+                if col_name in df.columns:
+                    raise ValueError(f"Column '{col_name}' already found in the DataFrame.")
+
+                if len(data) != len(df):
+                    raise ValueError(f"The length of the data for '{col_name}' should match the DataFrame.")
+
+                df[col_name] = data
+
+            return df
+
+        except ValueError as ve:
+            print(f"ValueError: {str(ve)}")
+            return df
