@@ -21,6 +21,6 @@ opencv-python
 Pillow
 scikit-image
 jupyterlab
-jupyter-tensorboard
+#jupyter-tensorboard
 voila
 fastparquet

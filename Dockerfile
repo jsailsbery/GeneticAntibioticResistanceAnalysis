@@ -17,7 +17,8 @@ RUN apt-get update && \
 
 # Add the requirements.txt to Docker container and install packages
 COPY requirements.txt /app
-RUN pip install --no-cache-dir -r requirements.txt
+#RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Start JupyterLab
 CMD ["jupyter", "lab", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
