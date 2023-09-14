@@ -14,7 +14,9 @@ docker run -p 8888:8888 -v $(PWD):/app antibiotic_resistance_notebook
 ## Analysis Documentation
 All analysis notes, processes, procedures are documented in the following jupyter notebooks.
 1. notebooks/data_visualization.ipynb
-2. notebooks/statistical_analyses.ipynb
+2. notebooks/organism_dist_identification.ipynb
+3. notebooks/principal_components_analysis.ipynb
+4. notebooks/principal_components_analysis_transformed.ipynb
 * please access these pages via a jupyter notebook server. We suggest to use your own container and run as noted previously.
 
 
