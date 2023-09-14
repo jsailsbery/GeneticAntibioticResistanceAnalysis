@@ -17,6 +17,7 @@ All analysis notes, processes, procedures are documented in the following jupyte
 2. notebooks/organism_dist_identification.ipynb
 3. notebooks/principal_components_analysis.ipynb
 4. notebooks/principal_components_analysis_transformed.ipynb
+5. notebooks/mcmc.ipynb
 * please access these pages via a jupyter notebook server. We suggest to use your own container and run as noted previously.
 
 # Repository SOP
