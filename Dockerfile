@@ -11,6 +11,9 @@ RUN apt-get update && \
         gcc \
         python3-dev \
         vim \
+	libhdf5-serial-dev \
+	netcdf-bin \
+	libnetcdf-dev \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*

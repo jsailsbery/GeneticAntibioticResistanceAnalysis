@@ -26,3 +26,5 @@ voila
 fastparquet
 pca
 imblearn
+theano-pymc
+pymc3
