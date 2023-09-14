@@ -25,3 +25,4 @@ jupyterlab
 voila
 fastparquet
 pca
+imblearn
