@@ -9,6 +9,8 @@ RUN apt-get update && \
     apt-get install -y \
         perl \
         gcc \
+	g++ \
+	libopenblas-dev \
         python3-dev \
         vim \
 	libhdf5-serial-dev \
