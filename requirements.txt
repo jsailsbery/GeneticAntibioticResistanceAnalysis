@@ -24,3 +24,5 @@ jupyterlab
 #jupyter-tensorboard
 voila
 fastparquet
+pca
+imblearn
